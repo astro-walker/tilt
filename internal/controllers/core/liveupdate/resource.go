@@ -3,11 +3,11 @@ package liveupdate
 import (
 	"time"
 
-	"github.com/tilt-dev/tilt/internal/controllers/apis/liveupdate"
-	"github.com/tilt-dev/tilt/internal/dockercompose"
-	"github.com/tilt-dev/tilt/internal/store/k8sconv"
-	"github.com/tilt-dev/tilt/pkg/apis"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/internal/controllers/apis/liveupdate"
+	"github.com/astro-walker/tilt/internal/dockercompose"
+	"github.com/astro-walker/tilt/internal/store/k8sconv"
+	"github.com/astro-walker/tilt/pkg/apis"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
 )
 
 // Helper interface for live-updating different kinds of resources.

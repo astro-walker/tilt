@@ -14,8 +14,8 @@ import (
 	"github.com/pkg/errors"
 
 	"github.com/tilt-dev/fsnotify"
-	"github.com/tilt-dev/tilt/internal/ospath"
-	"github.com/tilt-dev/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/internal/ospath"
+	"github.com/astro-walker/tilt/pkg/logger"
 )
 
 // A naive file watcher that uses the plain fsnotify API.

@@ -12,10 +12,10 @@ import (
 
 	"github.com/tilt-dev/wmclient/pkg/analytics"
 
-	tiltanalytics "github.com/tilt-dev/tilt/internal/analytics"
-	"github.com/tilt-dev/tilt/internal/controllers/fake"
-	"github.com/tilt-dev/tilt/internal/testutils/tempdir"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
+	tiltanalytics "github.com/astro-walker/tilt/internal/analytics"
+	"github.com/astro-walker/tilt/internal/controllers/fake"
+	"github.com/astro-walker/tilt/internal/testutils/tempdir"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
 )
 
 func TestDefault(t *testing.T) {

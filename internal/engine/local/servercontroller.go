@@ -11,11 +11,11 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	ctrlclient "sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/tilt-dev/tilt/internal/controllers/apis/configmap"
-	"github.com/tilt-dev/tilt/internal/store"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
-	"github.com/tilt-dev/tilt/pkg/logger"
-	"github.com/tilt-dev/tilt/pkg/model/logstore"
+	"github.com/astro-walker/tilt/internal/controllers/apis/configmap"
+	"github.com/astro-walker/tilt/internal/store"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/pkg/model/logstore"
 )
 
 const AnnotationOwnerName = "tilt.dev/owner-name"

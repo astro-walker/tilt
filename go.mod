@@ -1,4 +1,4 @@
-module github.com/tilt-dev/tilt
+module github.com/astro-walker/tilt
 
 go 1.18
 
@@ -246,7 +246,9 @@ replace (
 	// can remove if/when https://github.com/pkg/browser/pull/30 is merged
 	github.com/pkg/browser => github.com/tilt-dev/browser v0.0.1
 
-	// https://github.com/tilt-dev/tilt/issues/5745
+	github.com/tilt-dev/tilt => ./
+
+	// https://github.com/astro-walker/tilt/issues/5745
 	// https://github.com/moby/buildkit/issues/2837
 	github.com/tonistiigi/fsutil => github.com/tilt-dev/fsutil v0.0.0-tilt-20220505
 

@@ -8,8 +8,8 @@ import (
 	"github.com/docker/docker/api/types"
 	"github.com/docker/docker/api/types/filters"
 
-	"github.com/tilt-dev/tilt/internal/container"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/container"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 // A docker client that returns errors on every method call.

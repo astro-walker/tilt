@@ -8,7 +8,7 @@ import (
 	ctrlclient "sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
 )
 
 func UpsertDisableConfigMap(ctx context.Context, client ctrlclient.Client, name string, key string, isDisabled bool) error {

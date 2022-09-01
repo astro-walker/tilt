@@ -9,10 +9,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/tilt-dev/tilt/internal/testutils/tempdir"
-	"github.com/tilt-dev/tilt/internal/tiltfile/include"
-	"github.com/tilt-dev/tilt/internal/tiltfile/starkit"
-	tiltfilev1alpha1 "github.com/tilt-dev/tilt/internal/tiltfile/v1alpha1"
+	"github.com/astro-walker/tilt/internal/testutils/tempdir"
+	"github.com/astro-walker/tilt/internal/tiltfile/include"
+	"github.com/astro-walker/tilt/internal/tiltfile/starkit"
+	tiltfilev1alpha1 "github.com/astro-walker/tilt/internal/tiltfile/v1alpha1"
 )
 
 func TestFetchableAlreadyPresentWorks(t *testing.T) {

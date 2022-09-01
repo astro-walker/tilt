@@ -12,13 +12,13 @@ import (
 	"github.com/gdamore/tcell"
 	"github.com/pkg/errors"
 
-	"github.com/tilt-dev/tilt/internal/analytics"
-	"github.com/tilt-dev/tilt/internal/hud/view"
-	"github.com/tilt-dev/tilt/internal/openurl"
-	"github.com/tilt-dev/tilt/internal/output"
-	"github.com/tilt-dev/tilt/internal/store"
-	"github.com/tilt-dev/tilt/pkg/logger"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/analytics"
+	"github.com/astro-walker/tilt/internal/hud/view"
+	"github.com/astro-walker/tilt/internal/openurl"
+	"github.com/astro-walker/tilt/internal/output"
+	"github.com/astro-walker/tilt/internal/store"
+	"github.com/astro-walker/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 // The main loop ensures the HUD updates at least this often

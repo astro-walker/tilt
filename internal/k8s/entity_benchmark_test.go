@@ -3,8 +3,8 @@ package k8s
 import (
 	"testing"
 
-	"github.com/tilt-dev/tilt/internal/k8s/testyaml"
-	"github.com/tilt-dev/tilt/internal/yaml"
+	"github.com/astro-walker/tilt/internal/k8s/testyaml"
+	"github.com/astro-walker/tilt/internal/yaml"
 )
 
 func BenchmarkParseUnparseSingle(b *testing.B) {

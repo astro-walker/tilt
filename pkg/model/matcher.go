@@ -3,7 +3,7 @@ package model
 import (
 	"path/filepath"
 
-	"github.com/tilt-dev/tilt/internal/ospath"
+	"github.com/astro-walker/tilt/internal/ospath"
 )
 
 type PathMatcher interface {

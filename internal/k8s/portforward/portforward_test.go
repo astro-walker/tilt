@@ -34,7 +34,7 @@ import (
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/util/httpstream"
 
-	"github.com/tilt-dev/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/pkg/logger"
 )
 
 type fakeDialer struct {

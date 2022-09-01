@@ -1,7 +1,7 @@
 package liveupdates
 
 import (
-	"github.com/tilt-dev/tilt/internal/store"
+	"github.com/astro-walker/tilt/internal/store"
 )
 
 func HandleLiveUpdateUpsertAction(state *store.EngineState, action LiveUpdateUpsertAction) {

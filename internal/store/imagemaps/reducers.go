@@ -1,7 +1,7 @@
 package imagemaps
 
 import (
-	"github.com/tilt-dev/tilt/internal/store"
+	"github.com/astro-walker/tilt/internal/store"
 )
 
 func HandleImageMapUpsertAction(state *store.EngineState, action ImageMapUpsertAction) {

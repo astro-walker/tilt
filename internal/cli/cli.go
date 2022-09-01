@@ -13,10 +13,10 @@ import (
 	"k8s.io/cli-runtime/pkg/genericclioptions"
 
 	"github.com/tilt-dev/starlark-lsp/pkg/cli"
-	tiltanalytics "github.com/tilt-dev/tilt/internal/analytics"
-	"github.com/tilt-dev/tilt/internal/output"
-	"github.com/tilt-dev/tilt/pkg/logger"
-	"github.com/tilt-dev/tilt/pkg/model"
+	tiltanalytics "github.com/astro-walker/tilt/internal/analytics"
+	"github.com/astro-walker/tilt/internal/output"
+	"github.com/astro-walker/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/pkg/model"
 	"github.com/tilt-dev/wmclient/pkg/analytics"
 )
 

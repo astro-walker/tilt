@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/tilt-dev/tilt/internal/testutils"
-	"github.com/tilt-dev/tilt/internal/tiltfile/io"
+	"github.com/astro-walker/tilt/internal/testutils"
+	"github.com/astro-walker/tilt/internal/tiltfile/io"
 )
 
 func TestReadYAML(t *testing.T) {

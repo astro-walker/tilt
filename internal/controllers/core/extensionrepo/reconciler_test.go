@@ -13,10 +13,10 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/types"
 
-	"github.com/tilt-dev/tilt/internal/controllers/fake"
-	"github.com/tilt-dev/tilt/internal/testutils/tempdir"
-	"github.com/tilt-dev/tilt/internal/xdg"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/internal/controllers/fake"
+	"github.com/astro-walker/tilt/internal/testutils/tempdir"
+	"github.com/astro-walker/tilt/internal/xdg"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
 	"github.com/tilt-dev/wmclient/pkg/os/temp"
 )
 
@@ -245,7 +245,7 @@ func (d *fakeDownloader) Download(pkg string) (string, error) {
 	if exists && d.lastRefSync != "" && d.lastRefSync != "HEAD" {
 		// If the current disk state is checked out to a ref, then
 		// we expect Download() to fail.
-		// https://github.com/tilt-dev/tilt/issues/5508
+		// https://github.com/astro-walker/tilt/issues/5508
 		return "", fmt.Errorf("You are not currently on a branch.")
 	}
 

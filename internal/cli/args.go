@@ -15,12 +15,12 @@ import (
 	"k8s.io/cli-runtime/pkg/genericclioptions"
 	"k8s.io/kubectl/pkg/cmd/util/editor"
 
-	"github.com/tilt-dev/tilt/internal/analytics"
-	engineanalytics "github.com/tilt-dev/tilt/internal/engine/analytics"
-	"github.com/tilt-dev/tilt/internal/sliceutils"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
-	"github.com/tilt-dev/tilt/pkg/logger"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/analytics"
+	engineanalytics "github.com/astro-walker/tilt/internal/engine/analytics"
+	"github.com/astro-walker/tilt/internal/sliceutils"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 type argsCmd struct {

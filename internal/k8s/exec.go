@@ -10,7 +10,7 @@ import (
 	"k8s.io/client-go/tools/remotecommand"
 	"k8s.io/kubectl/pkg/scheme"
 
-	"github.com/tilt-dev/tilt/internal/container"
+	"github.com/astro-walker/tilt/internal/container"
 )
 
 func (k *K8sClient) Exec(_ context.Context, podID PodID, cName container.Name, n Namespace, cmd []string, stdin io.Reader, stdout io.Writer, stderr io.Writer) error {

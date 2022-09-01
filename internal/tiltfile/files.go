@@ -9,18 +9,18 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/tilt-dev/tilt/internal/k8s"
-	"github.com/tilt-dev/tilt/internal/localexec"
-	tiltfile_io "github.com/tilt-dev/tilt/internal/tiltfile/io"
-	"github.com/tilt-dev/tilt/internal/tiltfile/starkit"
-	"github.com/tilt-dev/tilt/internal/tiltfile/value"
-	"github.com/tilt-dev/tilt/pkg/logger"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/k8s"
+	"github.com/astro-walker/tilt/internal/localexec"
+	tiltfile_io "github.com/astro-walker/tilt/internal/tiltfile/io"
+	"github.com/astro-walker/tilt/internal/tiltfile/starkit"
+	"github.com/astro-walker/tilt/internal/tiltfile/value"
+	"github.com/astro-walker/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/pkg/model"
 
 	"github.com/pkg/errors"
 	"go.starlark.net/starlark"
 
-	"github.com/tilt-dev/tilt/internal/kustomize"
+	"github.com/astro-walker/tilt/internal/kustomize"
 )
 
 const localLogPrefix = " → "
@@ -289,7 +289,7 @@ func (s *tiltfileState) helm(thread *starlark.Thread, fn *starlark.Builtin, args
 
 	if version == helmV3_0 {
 		// Helm v3.0 has a bug where it doesn't include CRDs in the template output
-		// https://github.com/tilt-dev/tilt/issues/3605
+		// https://github.com/astro-walker/tilt/issues/3605
 		crds, err := getHelmCRDs(localPath)
 		if err != nil {
 			return nil, err

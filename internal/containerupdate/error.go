@@ -6,9 +6,9 @@ import (
 
 	"k8s.io/client-go/util/exec"
 
-	"github.com/tilt-dev/tilt/internal/build"
-	"github.com/tilt-dev/tilt/internal/docker"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/build"
+	"github.com/astro-walker/tilt/internal/docker"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 const (

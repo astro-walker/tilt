@@ -9,9 +9,9 @@ import (
 	digest "github.com/opencontainers/go-digest"
 	"github.com/tonistiigi/units"
 
-	"github.com/tilt-dev/tilt/pkg/apis"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
-	"github.com/tilt-dev/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/pkg/apis"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/pkg/logger"
 )
 
 type buildkitPrinter struct {

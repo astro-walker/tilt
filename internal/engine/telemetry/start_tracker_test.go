@@ -9,8 +9,8 @@ import (
 	"github.com/stretchr/testify/require"
 	sdktrace "go.opentelemetry.io/otel/sdk/trace"
 
-	"github.com/tilt-dev/tilt/internal/store"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/store"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 func TestStart(t *testing.T) {

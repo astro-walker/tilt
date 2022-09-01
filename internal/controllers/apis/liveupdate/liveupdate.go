@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/tilt-dev/tilt/internal/container"
-	"github.com/tilt-dev/tilt/pkg/apis"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/container"
+	"github.com/astro-walker/tilt/pkg/apis"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 // Generate the name for the LiveUpdate API object from an ImageTarget and ManifestName.

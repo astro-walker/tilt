@@ -14,11 +14,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tilt-dev/tilt/internal/dockerfile"
-	"github.com/tilt-dev/tilt/internal/dockerignore"
-	"github.com/tilt-dev/tilt/internal/testutils"
-	"github.com/tilt-dev/tilt/internal/testutils/tempdir"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/dockerfile"
+	"github.com/astro-walker/tilt/internal/dockerignore"
+	"github.com/astro-walker/tilt/internal/testutils"
+	"github.com/astro-walker/tilt/internal/testutils/tempdir"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 func TestArchiveDf(t *testing.T) {

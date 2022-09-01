@@ -6,9 +6,9 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/tilt-dev/tilt/internal/controllers/apicmp"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/controllers/apicmp"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 func SetTiltfileArgs(ctx context.Context, client client.Client, args []string) error {

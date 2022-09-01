@@ -9,15 +9,15 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tilt-dev/tilt/internal/analytics"
-	"github.com/tilt-dev/tilt/internal/dockercompose"
-	"github.com/tilt-dev/tilt/internal/k8s"
-	"github.com/tilt-dev/tilt/internal/k8s/testyaml"
-	"github.com/tilt-dev/tilt/internal/localexec"
-	"github.com/tilt-dev/tilt/internal/testutils"
-	"github.com/tilt-dev/tilt/internal/tiltfile"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/analytics"
+	"github.com/astro-walker/tilt/internal/dockercompose"
+	"github.com/astro-walker/tilt/internal/k8s"
+	"github.com/astro-walker/tilt/internal/k8s/testyaml"
+	"github.com/astro-walker/tilt/internal/localexec"
+	"github.com/astro-walker/tilt/internal/testutils"
+	"github.com/astro-walker/tilt/internal/tiltfile"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 func TestDownK8sYAML(t *testing.T) {

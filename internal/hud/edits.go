@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"path"
 
-	"github.com/tilt-dev/tilt/internal/rty"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/rty"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 type EditStatusLineComponent struct {

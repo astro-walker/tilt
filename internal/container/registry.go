@@ -8,7 +8,7 @@ import (
 	"github.com/docker/distribution/reference"
 	"github.com/pkg/errors"
 
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
 )
 
 var escapeRegex = regexp.MustCompile(`[/:@]`)
@@ -76,7 +76,7 @@ func replaceRegistry(defaultReg string, rs RefSelector, singleName string) (refe
 
 	// Sometimes users get confused and put the local registry name in the YAML.
 	// No need to replace the registry in that case.
-	// https://github.com/tilt-dev/tilt/issues/4911
+	// https://github.com/astro-walker/tilt/issues/4911
 	if strings.HasPrefix(rs.RefFamiliarName(), fmt.Sprintf("%s/", defaultReg)) {
 		return rs.AsNamedOnly(), nil
 	}

@@ -6,7 +6,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/tilt-dev/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/pkg/logger"
 
 	"github.com/tilt-dev/fsevents"
 )

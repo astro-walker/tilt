@@ -11,7 +11,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"k8s.io/apimachinery/pkg/types"
 
-	"github.com/tilt-dev/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/pkg/logger"
 )
 
 func newCtx() context.Context {

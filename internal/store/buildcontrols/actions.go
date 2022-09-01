@@ -3,9 +3,9 @@ package buildcontrols
 import (
 	"time"
 
-	"github.com/tilt-dev/tilt/internal/store"
-	"github.com/tilt-dev/tilt/pkg/model"
-	"github.com/tilt-dev/tilt/pkg/model/logstore"
+	"github.com/astro-walker/tilt/internal/store"
+	"github.com/astro-walker/tilt/pkg/model"
+	"github.com/astro-walker/tilt/pkg/model/logstore"
 )
 
 type BuildStartedAction struct {

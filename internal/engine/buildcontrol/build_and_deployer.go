@@ -3,8 +3,8 @@ package buildcontrol
 import (
 	"context"
 
-	"github.com/tilt-dev/tilt/internal/store"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/store"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 type BuildAndDeployer interface {

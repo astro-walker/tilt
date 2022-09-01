@@ -3,7 +3,7 @@ package dockerfile
 import (
 	"github.com/docker/distribution/reference"
 
-	"github.com/tilt-dev/tilt/internal/container"
+	"github.com/astro-walker/tilt/internal/container"
 )
 
 func InjectImageDigest(df Dockerfile, selector container.RefSelector, ref reference.NamedTagged, buildArgs []string) (Dockerfile, bool, error) {

@@ -8,8 +8,8 @@ import (
 
 	"go.starlark.net/starlark"
 
-	"github.com/tilt-dev/tilt/internal/tiltfile/starkit"
-	"github.com/tilt-dev/tilt/internal/tiltfile/value"
+	"github.com/astro-walker/tilt/internal/tiltfile/starkit"
+	"github.com/astro-walker/tilt/internal/tiltfile/value"
 )
 
 // The starlark OS module.

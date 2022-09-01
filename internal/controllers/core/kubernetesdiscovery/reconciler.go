@@ -22,17 +22,17 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 	"sigs.k8s.io/controller-runtime/pkg/source"
 
-	"github.com/tilt-dev/tilt/internal/controllers/apicmp"
-	"github.com/tilt-dev/tilt/internal/controllers/apis/cluster"
-	"github.com/tilt-dev/tilt/internal/controllers/indexer"
-	"github.com/tilt-dev/tilt/internal/k8s"
-	"github.com/tilt-dev/tilt/internal/store"
-	"github.com/tilt-dev/tilt/internal/store/k8sconv"
-	"github.com/tilt-dev/tilt/internal/store/kubernetesdiscoverys"
-	"github.com/tilt-dev/tilt/pkg/apis"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
-	"github.com/tilt-dev/tilt/pkg/logger"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/controllers/apicmp"
+	"github.com/astro-walker/tilt/internal/controllers/apis/cluster"
+	"github.com/astro-walker/tilt/internal/controllers/indexer"
+	"github.com/astro-walker/tilt/internal/k8s"
+	"github.com/astro-walker/tilt/internal/store"
+	"github.com/astro-walker/tilt/internal/store/k8sconv"
+	"github.com/astro-walker/tilt/internal/store/kubernetesdiscoverys"
+	"github.com/astro-walker/tilt/pkg/apis"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 var (

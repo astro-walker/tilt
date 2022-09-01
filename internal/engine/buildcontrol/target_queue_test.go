@@ -8,11 +8,11 @@ import (
 	"github.com/docker/distribution/reference"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/tilt-dev/tilt/internal/testutils"
+	"github.com/astro-walker/tilt/internal/testutils"
 
-	"github.com/tilt-dev/tilt/internal/container"
-	"github.com/tilt-dev/tilt/internal/store"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/container"
+	"github.com/astro-walker/tilt/internal/store"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 func TestTargetQueue_Simple(t *testing.T) {

@@ -9,8 +9,8 @@ import (
 	"github.com/pkg/errors"
 	"go.starlark.net/starlark"
 
-	"github.com/tilt-dev/tilt/internal/tiltfile/starkit"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/tiltfile/starkit"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 // If `v` is a `starlark.Sequence`, return a slice of its elements

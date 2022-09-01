@@ -9,8 +9,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tilt-dev/tilt/internal/tiltfile/starkit"
-	"github.com/tilt-dev/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/internal/tiltfile/starkit"
+	"github.com/astro-walker/tilt/pkg/logger"
 )
 
 func TestWarn(t *testing.T) {

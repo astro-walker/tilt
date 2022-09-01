@@ -14,19 +14,19 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/types"
 
-	"github.com/tilt-dev/tilt/internal/hud/server"
-	"github.com/tilt-dev/tilt/internal/testutils/tempdir"
-	"github.com/tilt-dev/tilt/internal/xdg"
+	"github.com/astro-walker/tilt/internal/hud/server"
+	"github.com/astro-walker/tilt/internal/testutils/tempdir"
+	"github.com/astro-walker/tilt/internal/xdg"
 	"github.com/tilt-dev/wmclient/pkg/analytics"
 
-	"github.com/tilt-dev/tilt/internal/controllers/apicmp"
-	"github.com/tilt-dev/tilt/internal/controllers/fake"
-	"github.com/tilt-dev/tilt/internal/controllers/indexer"
-	"github.com/tilt-dev/tilt/internal/docker"
-	"github.com/tilt-dev/tilt/internal/k8s"
-	"github.com/tilt-dev/tilt/internal/timecmp"
-	"github.com/tilt-dev/tilt/pkg/apis"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/internal/controllers/apicmp"
+	"github.com/astro-walker/tilt/internal/controllers/fake"
+	"github.com/astro-walker/tilt/internal/controllers/indexer"
+	"github.com/astro-walker/tilt/internal/docker"
+	"github.com/astro-walker/tilt/internal/k8s"
+	"github.com/astro-walker/tilt/internal/timecmp"
+	"github.com/astro-walker/tilt/pkg/apis"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
 )
 
 func TestKubernetesError(t *testing.T) {

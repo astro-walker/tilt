@@ -20,14 +20,14 @@ import (
 	controllerruntime "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
-	"github.com/tilt-dev/tilt/internal/container"
-	"github.com/tilt-dev/tilt/internal/controllers/apis/cluster"
-	"github.com/tilt-dev/tilt/internal/controllers/fake"
-	"github.com/tilt-dev/tilt/internal/controllers/indexer"
-	"github.com/tilt-dev/tilt/internal/k8s"
-	"github.com/tilt-dev/tilt/internal/timecmp"
-	"github.com/tilt-dev/tilt/pkg/apis"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/internal/container"
+	"github.com/astro-walker/tilt/internal/controllers/apis/cluster"
+	"github.com/astro-walker/tilt/internal/controllers/fake"
+	"github.com/astro-walker/tilt/internal/controllers/indexer"
+	"github.com/astro-walker/tilt/internal/k8s"
+	"github.com/astro-walker/tilt/internal/timecmp"
+	"github.com/astro-walker/tilt/pkg/apis"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
 )
 
 const stdTimeout = time.Second

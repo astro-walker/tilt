@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/tilt-dev/tilt/internal/container"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/internal/container"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
 )
 
 func TestValidate(t *testing.T) {

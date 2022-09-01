@@ -13,10 +13,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/tilt-dev/tilt/internal/build/moby"
-	"github.com/tilt-dev/tilt/internal/dockerfile"
-	"github.com/tilt-dev/tilt/pkg/logger"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/build/moby"
+	"github.com/astro-walker/tilt/internal/dockerfile"
+	"github.com/astro-walker/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 type ArchiveBuilder struct {

@@ -6,17 +6,17 @@ import (
 
 	"k8s.io/apimachinery/pkg/types"
 
-	"github.com/tilt-dev/tilt/pkg/apis"
+	"github.com/astro-walker/tilt/pkg/apis"
 
-	"github.com/tilt-dev/tilt/pkg/model/logstore"
+	"github.com/astro-walker/tilt/pkg/model/logstore"
 
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
 
 	v1 "k8s.io/api/core/v1"
 
-	"github.com/tilt-dev/tilt/internal/k8s"
-	"github.com/tilt-dev/tilt/pkg/logger"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/k8s"
+	"github.com/astro-walker/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 func Pod(ctx context.Context, pod *v1.Pod, ancestorUID types.UID) *v1alpha1.Pod {

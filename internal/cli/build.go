@@ -3,7 +3,7 @@ package cli
 import (
 	"os"
 
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 // Version for Go-compiled builds that didn't go through goreleaser.

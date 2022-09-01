@@ -20,18 +20,18 @@ import (
 
 	"github.com/docker/go-connections/nat"
 
-	"github.com/tilt-dev/tilt/internal/controllers/apicmp"
-	"github.com/tilt-dev/tilt/internal/controllers/apis/configmap"
-	"github.com/tilt-dev/tilt/internal/controllers/apis/imagemap"
-	"github.com/tilt-dev/tilt/internal/controllers/indexer"
-	"github.com/tilt-dev/tilt/internal/docker"
-	"github.com/tilt-dev/tilt/internal/dockercompose"
-	"github.com/tilt-dev/tilt/internal/store"
-	"github.com/tilt-dev/tilt/internal/store/dockercomposeservices"
-	"github.com/tilt-dev/tilt/pkg/apis"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
-	"github.com/tilt-dev/tilt/pkg/logger"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/controllers/apicmp"
+	"github.com/astro-walker/tilt/internal/controllers/apis/configmap"
+	"github.com/astro-walker/tilt/internal/controllers/apis/imagemap"
+	"github.com/astro-walker/tilt/internal/controllers/indexer"
+	"github.com/astro-walker/tilt/internal/docker"
+	"github.com/astro-walker/tilt/internal/dockercompose"
+	"github.com/astro-walker/tilt/internal/store"
+	"github.com/astro-walker/tilt/internal/store/dockercomposeservices"
+	"github.com/astro-walker/tilt/pkg/apis"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 type Reconciler struct {

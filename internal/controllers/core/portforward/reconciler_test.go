@@ -16,20 +16,20 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	"github.com/tilt-dev/tilt/internal/controllers/apis/cluster"
-	"github.com/tilt-dev/tilt/internal/controllers/fake"
-	"github.com/tilt-dev/tilt/internal/controllers/indexer"
-	"github.com/tilt-dev/tilt/pkg/apis"
+	"github.com/astro-walker/tilt/internal/controllers/apis/cluster"
+	"github.com/astro-walker/tilt/internal/controllers/fake"
+	"github.com/astro-walker/tilt/internal/controllers/indexer"
+	"github.com/astro-walker/tilt/pkg/apis"
 
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/pkg/model"
 
-	"github.com/tilt-dev/tilt/internal/store/k8sconv"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/internal/store/k8sconv"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/tilt-dev/tilt/internal/k8s"
-	"github.com/tilt-dev/tilt/internal/store"
+	"github.com/astro-walker/tilt/internal/k8s"
+	"github.com/astro-walker/tilt/internal/store"
 )
 
 const (

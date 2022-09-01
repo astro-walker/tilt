@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
 )
 
 func TestCmdExecEqual(t *testing.T) {

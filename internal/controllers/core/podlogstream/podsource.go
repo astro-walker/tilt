@@ -18,9 +18,9 @@ import (
 
 	"github.com/jonboulle/clockwork"
 
-	"github.com/tilt-dev/tilt/internal/controllers/indexer"
-	"github.com/tilt-dev/tilt/internal/k8s"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/internal/controllers/indexer"
+	"github.com/astro-walker/tilt/internal/k8s"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
 )
 
 var podGVK = schema.GroupVersionKind{Version: "v1", Kind: "Pod"}

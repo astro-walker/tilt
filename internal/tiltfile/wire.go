@@ -3,10 +3,10 @@ package tiltfile
 import (
 	"github.com/google/wire"
 
-	"github.com/tilt-dev/tilt/internal/tiltfile/config"
-	"github.com/tilt-dev/tilt/internal/tiltfile/k8scontext"
-	"github.com/tilt-dev/tilt/internal/tiltfile/tiltextension"
-	"github.com/tilt-dev/tilt/internal/tiltfile/version"
+	"github.com/astro-walker/tilt/internal/tiltfile/config"
+	"github.com/astro-walker/tilt/internal/tiltfile/k8scontext"
+	"github.com/astro-walker/tilt/internal/tiltfile/tiltextension"
+	"github.com/astro-walker/tilt/internal/tiltfile/version"
 )
 
 var WireSet = wire.NewSet(

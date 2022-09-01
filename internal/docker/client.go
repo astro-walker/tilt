@@ -30,11 +30,11 @@ import (
 	"github.com/moby/buildkit/session/filesync"
 	"github.com/pkg/errors"
 
-	"github.com/tilt-dev/tilt/internal/container"
-	"github.com/tilt-dev/tilt/internal/docker/buildkit"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
-	"github.com/tilt-dev/tilt/pkg/logger"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/container"
+	"github.com/astro-walker/tilt/internal/docker/buildkit"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 // Label that we attach to all of the images we build.
@@ -492,7 +492,7 @@ func (c *Cli) ImagePush(ctx context.Context, ref reference.NamedTagged) (io.Read
 func (c *Cli) ImageBuild(ctx context.Context, buildContext io.Reader, options BuildOptions) (types.ImageBuildResponse, error) {
 	// Always use a one-time session when using buildkit, since credential
 	// passing is fast and we want to get the latest creds.
-	// https://github.com/tilt-dev/tilt/issues/4043
+	// https://github.com/astro-walker/tilt/issues/4043
 	var oneTimeSession *session.Session
 	sessionID := ""
 

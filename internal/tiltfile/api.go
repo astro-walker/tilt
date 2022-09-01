@@ -8,7 +8,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 //go:embed api/*.py api/*/*.py

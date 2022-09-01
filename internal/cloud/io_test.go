@@ -10,13 +10,13 @@ import (
 	"google.golang.org/protobuf/types/known/timestamppb"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/tilt-dev/tilt/internal/hud/webview"
-	"github.com/tilt-dev/tilt/internal/store"
-	"github.com/tilt-dev/tilt/internal/store/tiltfiles"
-	"github.com/tilt-dev/tilt/internal/testutils"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
-	"github.com/tilt-dev/tilt/pkg/model"
-	proto_webview "github.com/tilt-dev/tilt/pkg/webview"
+	"github.com/astro-walker/tilt/internal/hud/webview"
+	"github.com/astro-walker/tilt/internal/store"
+	"github.com/astro-walker/tilt/internal/store/tiltfiles"
+	"github.com/astro-walker/tilt/internal/testutils"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/pkg/model"
+	proto_webview "github.com/astro-walker/tilt/pkg/webview"
 )
 
 func TestWriteSnapshotTo(t *testing.T) {

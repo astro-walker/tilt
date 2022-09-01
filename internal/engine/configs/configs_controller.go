@@ -6,10 +6,10 @@ import (
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	ctrlclient "sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/tilt-dev/tilt/internal/controllers/apis/tiltfile"
-	"github.com/tilt-dev/tilt/internal/controllers/apis/uibutton"
-	"github.com/tilt-dev/tilt/internal/store"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/controllers/apis/tiltfile"
+	"github.com/astro-walker/tilt/internal/controllers/apis/uibutton"
+	"github.com/astro-walker/tilt/internal/store"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 type ConfigsController struct {

@@ -11,12 +11,12 @@ import (
 	"github.com/spf13/cobra"
 	"k8s.io/cli-runtime/pkg/genericclioptions"
 
-	"github.com/tilt-dev/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/pkg/logger"
 
-	"github.com/tilt-dev/tilt/internal/analytics"
-	ctrltiltfile "github.com/tilt-dev/tilt/internal/controllers/apis/tiltfile"
-	"github.com/tilt-dev/tilt/internal/tiltfile"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/analytics"
+	ctrltiltfile "github.com/astro-walker/tilt/internal/controllers/apis/tiltfile"
+	"github.com/astro-walker/tilt/internal/tiltfile"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 var tupleRE = regexp.MustCompile(`,\)$`)

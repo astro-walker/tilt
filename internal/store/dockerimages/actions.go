@@ -1,6 +1,6 @@
 package dockerimages
 
-import "github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
+import "github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
 
 type DockerImageUpsertAction struct {
 	DockerImage *v1alpha1.DockerImage

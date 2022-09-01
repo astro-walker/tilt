@@ -5,8 +5,8 @@ import (
 
 	"go.starlark.net/starlark"
 
-	"github.com/tilt-dev/tilt/internal/tiltfile/starkit"
-	"github.com/tilt-dev/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/internal/tiltfile/starkit"
+	"github.com/astro-walker/tilt/pkg/logger"
 )
 
 // Additional functions for print output.

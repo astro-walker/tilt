@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"go.starlark.net/starlark"
 
-	"github.com/tilt-dev/tilt/internal/tiltfile/starkit"
+	"github.com/astro-walker/tilt/internal/tiltfile/starkit"
 )
 
 func TestLoadError(t *testing.T) {

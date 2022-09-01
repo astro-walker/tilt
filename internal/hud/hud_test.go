@@ -8,10 +8,10 @@ import (
 
 	"github.com/gdamore/tcell"
 
-	"github.com/tilt-dev/tilt/internal/openurl"
-	"github.com/tilt-dev/tilt/internal/rty"
-	"github.com/tilt-dev/tilt/internal/testutils"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/openurl"
+	"github.com/astro-walker/tilt/internal/rty"
+	"github.com/astro-walker/tilt/internal/testutils"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 func TestRenderInit(t *testing.T) {

@@ -30,7 +30,7 @@ import (
 	ktesting "k8s.io/client-go/testing"
 
 	"github.com/tilt-dev/clusterid"
-	"github.com/tilt-dev/tilt/internal/testutils"
+	"github.com/astro-walker/tilt/internal/testutils"
 )
 
 func TestK8sClient_WatchPods(t *testing.T) {

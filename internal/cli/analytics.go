@@ -4,10 +4,10 @@ import (
 	"os"
 	"runtime"
 
-	tiltanalytics "github.com/tilt-dev/tilt/internal/analytics"
-	"github.com/tilt-dev/tilt/internal/git"
-	"github.com/tilt-dev/tilt/pkg/logger"
-	"github.com/tilt-dev/tilt/pkg/model"
+	tiltanalytics "github.com/astro-walker/tilt/internal/analytics"
+	"github.com/astro-walker/tilt/internal/git"
+	"github.com/astro-walker/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/pkg/model"
 
 	"github.com/tilt-dev/wmclient/pkg/analytics"
 )

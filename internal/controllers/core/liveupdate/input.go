@@ -1,8 +1,8 @@
 package liveupdate
 
 import (
-	"github.com/tilt-dev/tilt/internal/build"
-	"github.com/tilt-dev/tilt/internal/store/liveupdates"
+	"github.com/astro-walker/tilt/internal/build"
+	"github.com/astro-walker/tilt/internal/store/liveupdates"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )

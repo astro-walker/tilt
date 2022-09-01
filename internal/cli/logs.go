@@ -7,10 +7,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/tilt-dev/tilt/internal/hud/server"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/hud/server"
+	"github.com/astro-walker/tilt/pkg/model"
 
-	"github.com/tilt-dev/tilt/internal/analytics"
+	"github.com/astro-walker/tilt/internal/analytics"
 )
 
 type logsCmd struct {

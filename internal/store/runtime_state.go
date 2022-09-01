@@ -9,13 +9,13 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"github.com/tilt-dev/tilt/internal/store/k8sconv"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/internal/store/k8sconv"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
 
 	v1 "k8s.io/api/core/v1"
 
-	"github.com/tilt-dev/tilt/internal/k8s"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/k8s"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 type RuntimeState interface {

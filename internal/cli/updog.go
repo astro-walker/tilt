@@ -13,17 +13,17 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	ctrlclient "sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/tilt-dev/tilt/internal/analytics"
-	"github.com/tilt-dev/tilt/internal/cli/visitor"
-	"github.com/tilt-dev/tilt/internal/controllers"
-	"github.com/tilt-dev/tilt/internal/engine"
-	engineanalytics "github.com/tilt-dev/tilt/internal/engine/analytics"
-	"github.com/tilt-dev/tilt/internal/hud"
-	"github.com/tilt-dev/tilt/internal/hud/server"
-	"github.com/tilt-dev/tilt/internal/store"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
-	"github.com/tilt-dev/tilt/pkg/logger"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/analytics"
+	"github.com/astro-walker/tilt/internal/cli/visitor"
+	"github.com/astro-walker/tilt/internal/controllers"
+	"github.com/astro-walker/tilt/internal/engine"
+	engineanalytics "github.com/astro-walker/tilt/internal/engine/analytics"
+	"github.com/astro-walker/tilt/internal/hud"
+	"github.com/astro-walker/tilt/internal/hud/server"
+	"github.com/astro-walker/tilt/internal/store"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 type updogCmd struct {
@@ -60,7 +60,7 @@ a set of configs. Here's a youtube video showing it in action:
 
 https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
-See https://github.com/tilt-dev/tilt/tree/master/internal/cli/updog-examples
+See https://github.com/astro-walker/tilt/tree/master/internal/cli/updog-examples
 for example configs.
 `,
 		Example: "tilt alpha updog -f config.yaml",

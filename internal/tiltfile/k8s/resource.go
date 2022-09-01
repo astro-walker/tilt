@@ -1,8 +1,8 @@
 package k8s
 
 import (
-	"github.com/tilt-dev/tilt/internal/k8s"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/k8s"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 type KindInfo struct {

@@ -5,15 +5,15 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/tilt-dev/tilt/internal/container"
-	"github.com/tilt-dev/tilt/internal/dockercompose"
-	"github.com/tilt-dev/tilt/internal/k8s"
-	"github.com/tilt-dev/tilt/internal/store"
-	"github.com/tilt-dev/tilt/internal/store/dockercomposeservices"
-	"github.com/tilt-dev/tilt/internal/timecmp"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
-	"github.com/tilt-dev/tilt/pkg/logger"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/container"
+	"github.com/astro-walker/tilt/internal/dockercompose"
+	"github.com/astro-walker/tilt/internal/k8s"
+	"github.com/astro-walker/tilt/internal/store"
+	"github.com/astro-walker/tilt/internal/store/dockercomposeservices"
+	"github.com/astro-walker/tilt/internal/timecmp"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 const BuildControlSource = "buildcontrol"
@@ -95,7 +95,7 @@ func handleBuildResults(engineState *store.EngineState,
 		// for rebuild and not currently building. This has two benefits:
 		//
 		// 1) If there's a bug in Tilt's image caching (e.g.,
-		//    https://github.com/tilt-dev/tilt/pull/3542), this prevents infinite
+		//    https://github.com/astro-walker/tilt/pull/3542), this prevents infinite
 		//    builds.
 		//
 		// 2) If the current manifest build was kicked off by a trigger, we don't

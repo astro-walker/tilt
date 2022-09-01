@@ -8,8 +8,8 @@ import (
 	"github.com/davecgh/go-spew/spew"
 	"gopkg.in/d4l3k/messagediff.v1"
 
-	"github.com/tilt-dev/tilt/pkg/logger"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 // Allow actions to batch together a bit.

@@ -40,7 +40,7 @@ fi
 
 OUTPUT_FILE=$(mktemp)
 bash "${CODEGEN_PKG}/generate-internal-groups.sh" "deepcopy,defaulter,openapi" \
-  github.com/tilt-dev/tilt/pkg github.com/tilt-dev/tilt/pkg/apis github.com/tilt-dev/tilt/pkg/apis \
+  github.com/astro-walker/tilt/pkg github.com/tilt-dev/tilt/pkg/apis github.com/tilt-dev/tilt/pkg/apis \
   "core:v1alpha1" \
   --output-base "$(dirname "${BASH_SOURCE[0]}")/../../../.." \
   --go-header-file "${SCRIPT_ROOT}/hack/boilerplate.go.txt" | \

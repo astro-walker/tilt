@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/tilt-dev/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/pkg/logger"
 
 	"github.com/stretchr/testify/assert"
 )

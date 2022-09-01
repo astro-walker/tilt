@@ -103,7 +103,7 @@ brews:
   commit_author:
     name: Tilt Dev
     email: hi@tilt.dev
-  url_template: "https://github.com/tilt-dev/tilt/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
+  url_template: "https://github.com/astro-walker/tilt/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
   homepage: "https://tilt.dev/"
   description: "A dev environment as code for microservice apps"
   install: |
@@ -177,7 +177,7 @@ docker_manifests:
   - docker/{{ .ProjectName }}:{{ .Tag }}-amd64
   - docker/{{ .ProjectName }}:{{ .Tag }}-arm64
 scoop:
-  url_template: "https://github.com/tilt-dev/tilt/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
+  url_template: "https://github.com/astro-walker/tilt/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
   bucket:
     owner: tilt-dev
     name: scoop-bucket

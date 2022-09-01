@@ -10,11 +10,11 @@ import (
 	"github.com/fatih/color"
 	tty "github.com/mattn/go-tty"
 
-	"github.com/tilt-dev/tilt/internal/analytics"
-	"github.com/tilt-dev/tilt/internal/hud"
-	"github.com/tilt-dev/tilt/internal/openurl"
-	"github.com/tilt-dev/tilt/internal/store"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/analytics"
+	"github.com/astro-walker/tilt/internal/hud"
+	"github.com/astro-walker/tilt/internal/openurl"
+	"github.com/astro-walker/tilt/internal/store"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 type TerminalInput interface {

@@ -11,8 +11,8 @@ import (
 	ctrlclient "sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
-	"github.com/tilt-dev/tilt/internal/hud/server"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/internal/hud/server"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
 )
 
 // The uisession.Reconciler is not a real reconciler because UIResource is not

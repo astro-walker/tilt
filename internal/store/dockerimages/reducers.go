@@ -1,7 +1,7 @@
 package dockerimages
 
 import (
-	"github.com/tilt-dev/tilt/internal/store"
+	"github.com/astro-walker/tilt/internal/store"
 )
 
 func HandleDockerImageUpsertAction(state *store.EngineState, action DockerImageUpsertAction) {

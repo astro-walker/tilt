@@ -5,7 +5,7 @@ import (
 	"sync"
 
 	"github.com/tilt-dev/clusterid"
-	"github.com/tilt-dev/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/pkg/logger"
 )
 
 // Some K8s environments expose a single IP for the whole cluster.

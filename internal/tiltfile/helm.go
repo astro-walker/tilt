@@ -55,7 +55,7 @@ const (
 func parseVersion(versionOutput string) (helmVersion, error) {
 	// helm v3.3.3 throws warnings on stdout, which messes up version parsing;
 	// if we have multiple lines of version output, assume version info is in
-	// the last line (see https://github.com/tilt-dev/tilt/issues/3788)
+	// the last line (see https://github.com/astro-walker/tilt/issues/3788)
 	version := versionOutput
 	lines := strings.Split(strings.TrimSpace(versionOutput), "\n")
 	if len(lines) > 1 {

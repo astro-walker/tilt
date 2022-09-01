@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 func newState(manifests []model.Manifest) *EngineState {

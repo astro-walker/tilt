@@ -8,7 +8,7 @@ import (
 	"os"
 	"regexp"
 
-	"github.com/tilt-dev/tilt/internal/filteredwriter"
+	"github.com/astro-walker/tilt/internal/filteredwriter"
 
 	"k8s.io/klog/v2"
 )

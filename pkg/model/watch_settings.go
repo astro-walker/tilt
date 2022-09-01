@@ -1,6 +1,6 @@
 package model
 
-import "github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
+import "github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
 
 type WatchSettings struct {
 	Ignores []Dockerignore

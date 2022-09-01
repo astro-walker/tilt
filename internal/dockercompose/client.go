@@ -18,10 +18,10 @@ import (
 	"github.com/compose-spec/compose-go/types"
 	"github.com/pkg/errors"
 
-	"github.com/tilt-dev/tilt/internal/container"
-	"github.com/tilt-dev/tilt/internal/docker"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
-	"github.com/tilt-dev/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/internal/container"
+	"github.com/astro-walker/tilt/internal/docker"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/pkg/logger"
 
 	compose "github.com/compose-spec/compose-go/cli"
 )
@@ -120,7 +120,7 @@ func (c *cmdDCClient) Up(ctx context.Context, spec v1alpha1.DockerComposeService
 	}
 
 	// docker-compose up is not thread-safe, because network operations are non-atomic. See:
-	// https://github.com/tilt-dev/tilt/issues/2817
+	// https://github.com/astro-walker/tilt/issues/2817
 	//
 	// docker-compose build can run in parallel fine, so we only want the mutex on the 'up' call.
 	//
@@ -291,7 +291,7 @@ func (c *cmdDCClient) Project(ctx context.Context, spec v1alpha1.DockerComposePr
 	// HACK(milas): compose-go has known regressions with resolving variables during YAML loading
 	// 	if it fails, attempt to fallback to using the CLI to resolve the YAML and then parse
 	// 	it with compose-go
-	// 	see https://github.com/tilt-dev/tilt/issues/4795
+	// 	see https://github.com/astro-walker/tilt/issues/4795
 	if proj == nil {
 		proj, err = c.loadProjectCLI(ctx, spec)
 		if err != nil {

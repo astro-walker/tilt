@@ -33,9 +33,9 @@ import (
 	"k8s.io/kubectl/pkg/cmd/patch"
 	cmdutil "k8s.io/kubectl/pkg/cmd/util"
 
-	"github.com/tilt-dev/tilt/internal/analytics"
-	engineanalytics "github.com/tilt-dev/tilt/internal/engine/analytics"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/analytics"
+	engineanalytics "github.com/astro-walker/tilt/internal/engine/analytics"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 var patchTypes = map[string]types.PatchType{"json": types.JSONPatchType, "merge": types.MergePatchType, "strategic": types.StrategicMergePatchType}

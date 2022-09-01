@@ -905,7 +905,7 @@ describe("bulk disable actions", () => {
   })
 })
 
-// https://github.com/tilt-dev/tilt/issues/5754
+// https://github.com/astro-walker/tilt/issues/5754
 it("renders the trigger mode column correctly", () => {
   const view = nResourceView(2)
   view.uiResources = [

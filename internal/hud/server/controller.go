@@ -17,9 +17,9 @@ import (
 	"k8s.io/kubectl/pkg/proxy"
 
 	"github.com/tilt-dev/tilt-apiserver/pkg/server/start"
-	"github.com/tilt-dev/tilt/internal/store"
-	"github.com/tilt-dev/tilt/pkg/assets"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/store"
+	"github.com/astro-walker/tilt/pkg/assets"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 // apiServerProxyPrefix routes web HUD requests to the apiserver as it cannot contact it directly.

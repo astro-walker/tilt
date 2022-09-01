@@ -12,13 +12,13 @@ import (
 	"k8s.io/client-go/transport"
 
 	"github.com/tilt-dev/tilt-apiserver/pkg/server/apiserver"
-	"github.com/tilt-dev/tilt/internal/analytics"
-	engineanalytics "github.com/tilt-dev/tilt/internal/engine/analytics"
-	"github.com/tilt-dev/tilt/internal/hud/server"
-	"github.com/tilt-dev/tilt/internal/store"
-	"github.com/tilt-dev/tilt/internal/xdg"
-	"github.com/tilt-dev/tilt/pkg/assets"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/analytics"
+	engineanalytics "github.com/astro-walker/tilt/internal/engine/analytics"
+	"github.com/astro-walker/tilt/internal/hud/server"
+	"github.com/astro-walker/tilt/internal/store"
+	"github.com/astro-walker/tilt/internal/xdg"
+	"github.com/astro-walker/tilt/pkg/assets"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 type openapiCmd struct {

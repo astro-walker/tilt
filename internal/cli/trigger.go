@@ -12,9 +12,9 @@ import (
 	"github.com/spf13/cobra"
 	"k8s.io/cli-runtime/pkg/genericclioptions"
 
-	"github.com/tilt-dev/tilt/internal/analytics"
-	analytics2 "github.com/tilt-dev/tilt/internal/engine/analytics"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/analytics"
+	analytics2 "github.com/astro-walker/tilt/internal/engine/analytics"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 type triggerCmd struct {

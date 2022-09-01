@@ -17,10 +17,10 @@ import (
 	"golang.org/x/sync/errgroup"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	"github.com/tilt-dev/tilt/internal/analytics"
-	engineanalytics "github.com/tilt-dev/tilt/internal/engine/analytics"
-	"github.com/tilt-dev/tilt/internal/snapshots"
-	proto_webview "github.com/tilt-dev/tilt/pkg/webview"
+	"github.com/astro-walker/tilt/internal/analytics"
+	engineanalytics "github.com/astro-walker/tilt/internal/engine/analytics"
+	"github.com/astro-walker/tilt/internal/snapshots"
+	proto_webview "github.com/astro-walker/tilt/pkg/webview"
 )
 
 func newSnapshotCmd() *cobra.Command {

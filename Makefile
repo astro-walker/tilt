@@ -17,7 +17,7 @@ GOIMPORTS_LOCAL_ARG := -local github.com/tilt-dev
 
 # Build a binary the current commit SHA
 install:
-	go install -mod vendor -ldflags "-X 'github.com/tilt-dev/tilt/internal/cli.commitSHA=$$(git merge-base master HEAD)'" ./cmd/tilt/...
+	go install -mod vendor -ldflags "-X 'github.com/astro-walker/tilt/internal/cli.commitSHA=$$(git merge-base master HEAD)'" ./cmd/tilt/...
 
 # disable optimizations and inlining, to allow more complete information when attaching a debugger or capturing a profile
 install-debug:

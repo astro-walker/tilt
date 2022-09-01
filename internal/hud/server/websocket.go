@@ -17,13 +17,13 @@ import (
 
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
 
-	"github.com/tilt-dev/tilt/internal/hud/server/gorilla"
-	"github.com/tilt-dev/tilt/internal/hud/webview"
-	"github.com/tilt-dev/tilt/internal/store"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
-	"github.com/tilt-dev/tilt/pkg/logger"
-	"github.com/tilt-dev/tilt/pkg/model/logstore"
-	proto_webview "github.com/tilt-dev/tilt/pkg/webview"
+	"github.com/astro-walker/tilt/internal/hud/server/gorilla"
+	"github.com/astro-walker/tilt/internal/hud/webview"
+	"github.com/astro-walker/tilt/internal/store"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/pkg/model/logstore"
+	proto_webview "github.com/astro-walker/tilt/pkg/webview"
 
 	"github.com/gorilla/websocket"
 )
@@ -33,7 +33,7 @@ var upgrader = websocket.Upgrader{
 	WriteBufferSize: 1024,
 
 	// Disable compression due to safari bugs in websockets, see:
-	// https://github.com/tilt-dev/tilt/issues/4746
+	// https://github.com/astro-walker/tilt/issues/4746
 	//
 	// Though, frankly, we probably don't need compression
 	// anyway, since it's not like you're using Tilt over

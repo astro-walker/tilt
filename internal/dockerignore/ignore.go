@@ -9,7 +9,7 @@ import (
 	"github.com/docker/docker/builder/dockerignore"
 
 	tiltDockerignore "github.com/tilt-dev/dockerignore"
-	"github.com/tilt-dev/tilt/internal/ospath"
+	"github.com/astro-walker/tilt/internal/ospath"
 )
 
 type dockerPathMatcher struct {

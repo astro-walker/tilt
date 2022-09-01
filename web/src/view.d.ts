@@ -788,7 +788,7 @@ declare namespace Proto {
      *
      * See:
      * https://docs.aws.amazon.com/AmazonECR/latest/userguide/Repositories.html
-     * https://github.com/tilt-dev/tilt/issues/2419
+     * https://github.com/astro-walker/tilt/issues/2419
      *
      * +optional
      */

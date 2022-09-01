@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/tilt-dev/tilt/internal/testutils"
+	"github.com/astro-walker/tilt/internal/testutils"
 )
 
 func TestIncludeThreeTiltfiles(t *testing.T) {

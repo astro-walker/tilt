@@ -1,7 +1,7 @@
 package cmdimages
 
 import (
-	"github.com/tilt-dev/tilt/internal/store"
+	"github.com/astro-walker/tilt/internal/store"
 )
 
 func HandleCmdImageUpsertAction(state *store.EngineState, action CmdImageUpsertAction) {

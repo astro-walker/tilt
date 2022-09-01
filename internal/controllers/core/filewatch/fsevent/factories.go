@@ -3,8 +3,8 @@ package fsevent
 import (
 	"time"
 
-	"github.com/tilt-dev/tilt/internal/watch"
-	"github.com/tilt-dev/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/internal/watch"
+	"github.com/astro-walker/tilt/pkg/logger"
 )
 
 type WatcherMaker func(paths []string, ignore watch.PathMatcher, l logger.Logger) (watch.Notify, error)

@@ -9,8 +9,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/tilt-dev/tilt/internal/ignore"
-	"github.com/tilt-dev/tilt/internal/testutils/tempdir"
+	"github.com/astro-walker/tilt/internal/ignore"
+	"github.com/astro-walker/tilt/internal/testutils/tempdir"
 )
 
 func BenchmarkArchivePaths(b *testing.B) {

@@ -16,7 +16,7 @@ fi
 
 docker build -t tilt-protobuf-helper -f scripts/protobuf-helper.dockerfile scripts
 docker run --rm -v "$(pwd)":/go/src/github.com/tilt-dev/tilt \
-   --entrypoint /go/src/github.com/tilt-dev/tilt/scripts/update-protobuf-helper.sh \
+   --entrypoint /go/src/github.com/astro-walker/tilt/scripts/update-protobuf-helper.sh \
    tilt-protobuf-helper
 
 docker run --rm -e "CODEGEN_USER=$USER" -v "$(pwd)":/go/src/github.com/tilt-dev/tilt \

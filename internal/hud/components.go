@@ -1,8 +1,8 @@
 package hud
 
 import (
-	"github.com/tilt-dev/tilt/internal/hud/view"
-	"github.com/tilt-dev/tilt/internal/rty"
+	"github.com/astro-walker/tilt/internal/hud/view"
+	"github.com/astro-walker/tilt/internal/rty"
 )
 
 const resourcesScollerName = "resources"

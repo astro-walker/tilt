@@ -9,11 +9,11 @@ import (
 	"github.com/gdamore/tcell"
 	"github.com/rivo/tview"
 
-	"github.com/tilt-dev/tilt/internal/hud/view"
-	"github.com/tilt-dev/tilt/internal/rty"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
-	"github.com/tilt-dev/tilt/pkg/model"
-	"github.com/tilt-dev/tilt/pkg/model/logstore"
+	"github.com/astro-walker/tilt/internal/hud/view"
+	"github.com/astro-walker/tilt/internal/rty"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/pkg/model"
+	"github.com/astro-walker/tilt/pkg/model/logstore"
 )
 
 // These widths are determined experimentally, to see what shows up in a typical UX.

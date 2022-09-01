@@ -1,8 +1,8 @@
 package kubernetesapplys
 
 import (
-	"github.com/tilt-dev/tilt/internal/store"
-	"github.com/tilt-dev/tilt/internal/store/kubernetesdiscoverys"
+	"github.com/astro-walker/tilt/internal/store"
+	"github.com/astro-walker/tilt/internal/store/kubernetesdiscoverys"
 )
 
 func HandleKubernetesApplyUpsertAction(state *store.EngineState, action KubernetesApplyUpsertAction) {

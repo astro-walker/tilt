@@ -11,9 +11,9 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/handler"
 	"sigs.k8s.io/controller-runtime/pkg/source"
 
-	"github.com/tilt-dev/tilt/internal/controllers/indexer"
-	"github.com/tilt-dev/tilt/internal/sliceutils"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/internal/controllers/indexer"
+	"github.com/astro-walker/tilt/internal/sliceutils"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
 )
 
 var fwGVK = v1alpha1.SchemeGroupVersion.WithKind("FileWatch")

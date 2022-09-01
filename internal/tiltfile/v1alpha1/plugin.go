@@ -7,10 +7,10 @@ import (
 	"go.starlark.net/starlark"
 	"k8s.io/apimachinery/pkg/util/validation/field"
 
-	"github.com/tilt-dev/tilt/internal/controllers/apicmp"
-	"github.com/tilt-dev/tilt/internal/controllers/apiset"
-	"github.com/tilt-dev/tilt/internal/tiltfile/starkit"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/internal/controllers/apicmp"
+	"github.com/astro-walker/tilt/internal/controllers/apiset"
+	"github.com/astro-walker/tilt/internal/tiltfile/starkit"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
 )
 
 // Defines starlark functions that register API objects

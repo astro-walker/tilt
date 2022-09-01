@@ -4,8 +4,8 @@ import (
 	"context"
 	"io"
 
-	"github.com/tilt-dev/tilt/internal/store/liveupdates"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/store/liveupdates"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 type ContainerUpdater interface {

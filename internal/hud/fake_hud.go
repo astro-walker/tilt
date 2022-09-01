@@ -5,11 +5,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tilt-dev/tilt/internal/store"
-	"github.com/tilt-dev/tilt/pkg/logger"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/store"
+	"github.com/astro-walker/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/pkg/model"
 
-	"github.com/tilt-dev/tilt/internal/hud/view"
+	"github.com/astro-walker/tilt/internal/hud/view"
 )
 
 var _ HeadsUpDisplay = (*FakeHud)(nil)

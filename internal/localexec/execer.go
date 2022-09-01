@@ -11,9 +11,9 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/tilt-dev/tilt/pkg/logger"
-	"github.com/tilt-dev/tilt/pkg/model"
-	"github.com/tilt-dev/tilt/pkg/procutil"
+	"github.com/astro-walker/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/pkg/model"
+	"github.com/astro-walker/tilt/pkg/procutil"
 )
 
 // OneShotResult includes details about command execution.

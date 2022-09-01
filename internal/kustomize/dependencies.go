@@ -27,7 +27,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/tilt-dev/tilt/internal/ospath"
+	"github.com/astro-walker/tilt/internal/ospath"
 
 	yaml "gopkg.in/yaml.v2"
 	"sigs.k8s.io/kustomize/api/konfig"

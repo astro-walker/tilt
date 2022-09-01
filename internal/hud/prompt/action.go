@@ -1,6 +1,6 @@
 package prompt
 
-import "github.com/tilt-dev/tilt/internal/store"
+import "github.com/astro-walker/tilt/internal/store"
 
 type SwitchTerminalModeAction struct {
 	Mode store.TerminalMode

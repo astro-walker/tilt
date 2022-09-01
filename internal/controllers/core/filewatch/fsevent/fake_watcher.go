@@ -5,9 +5,9 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/tilt-dev/tilt/internal/ospath"
-	"github.com/tilt-dev/tilt/internal/watch"
-	"github.com/tilt-dev/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/internal/ospath"
+	"github.com/astro-walker/tilt/internal/watch"
+	"github.com/astro-walker/tilt/pkg/logger"
 )
 
 type FakeMultiWatcher struct {

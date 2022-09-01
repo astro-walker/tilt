@@ -40,7 +40,7 @@ Thank you for helping to keep Tilt and our users safe!
 ## Changes
 
 We may revise these guidelines from time to time. The most current
-version of the guidelines will be available at https://github.com/tilt-dev/tilt/blob/master/SECURITY.md.
+version of the guidelines will be available at https://github.com/astro-walker/tilt/blob/master/SECURITY.md.
 
 ## Contact
 

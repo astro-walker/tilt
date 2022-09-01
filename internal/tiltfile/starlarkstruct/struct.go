@@ -3,7 +3,7 @@ package starlarkstruct
 import (
 	"go.starlark.net/starlarkstruct"
 
-	"github.com/tilt-dev/tilt/internal/tiltfile/starkit"
+	"github.com/astro-walker/tilt/internal/tiltfile/starkit"
 )
 
 type Plugin struct {

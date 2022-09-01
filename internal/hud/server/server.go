@@ -10,7 +10,7 @@ import (
 
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
 
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/google/uuid"
@@ -20,13 +20,13 @@ import (
 	jsoniter "github.com/json-iterator/go"
 	ctrlclient "sigs.k8s.io/controller-runtime/pkg/client"
 
-	tiltanalytics "github.com/tilt-dev/tilt/internal/analytics"
-	"github.com/tilt-dev/tilt/internal/hud/webview"
-	"github.com/tilt-dev/tilt/internal/store"
-	"github.com/tilt-dev/tilt/internal/store/tiltfiles"
-	"github.com/tilt-dev/tilt/pkg/assets"
-	"github.com/tilt-dev/tilt/pkg/model"
-	proto_webview "github.com/tilt-dev/tilt/pkg/webview"
+	tiltanalytics "github.com/astro-walker/tilt/internal/analytics"
+	"github.com/astro-walker/tilt/internal/hud/webview"
+	"github.com/astro-walker/tilt/internal/store"
+	"github.com/astro-walker/tilt/internal/store/tiltfiles"
+	"github.com/astro-walker/tilt/pkg/assets"
+	"github.com/astro-walker/tilt/pkg/model"
+	proto_webview "github.com/astro-walker/tilt/pkg/webview"
 	"github.com/tilt-dev/wmclient/pkg/analytics"
 )
 

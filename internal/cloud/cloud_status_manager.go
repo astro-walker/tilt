@@ -11,11 +11,11 @@ import (
 
 	"github.com/jonboulle/clockwork"
 
-	"github.com/tilt-dev/tilt/internal/cloud/cloudurl"
-	"github.com/tilt-dev/tilt/internal/store"
-	"github.com/tilt-dev/tilt/internal/token"
-	"github.com/tilt-dev/tilt/pkg/logger"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/cloud/cloudurl"
+	"github.com/astro-walker/tilt/internal/store"
+	"github.com/astro-walker/tilt/internal/token"
+	"github.com/astro-walker/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 // to avoid infinitely resubmitting requests on error

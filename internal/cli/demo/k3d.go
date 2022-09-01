@@ -12,8 +12,8 @@ import (
 	"github.com/docker/distribution/reference"
 	"github.com/docker/docker/api/types/mount"
 
-	"github.com/tilt-dev/tilt/internal/docker"
-	"github.com/tilt-dev/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/internal/docker"
+	"github.com/astro-walker/tilt/pkg/logger"
 )
 
 const defaultK3dImage = "docker.io/rancher/k3d:v4.4.7"

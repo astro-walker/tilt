@@ -7,7 +7,7 @@ import (
 
 	"go.starlark.net/starlark"
 
-	"github.com/tilt-dev/tilt/internal/tiltfile/encoding"
+	"github.com/astro-walker/tilt/internal/tiltfile/encoding"
 )
 
 type objectSetting struct {

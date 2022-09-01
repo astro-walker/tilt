@@ -8,11 +8,11 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/tilt-dev/tilt/internal/store/liveupdates"
-	"github.com/tilt-dev/tilt/internal/testutils"
+	"github.com/astro-walker/tilt/internal/store/liveupdates"
+	"github.com/astro-walker/tilt/internal/testutils"
 
-	"github.com/tilt-dev/tilt/internal/docker"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/docker"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 var TestContainerInfo = liveupdates.Container{

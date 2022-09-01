@@ -3,8 +3,8 @@ package cmdimage
 import (
 	"fmt"
 
-	"github.com/tilt-dev/tilt/pkg/apis"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/pkg/apis"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 // Generate the name for the CmdImage API object from an ImageTarget and ManifestName.

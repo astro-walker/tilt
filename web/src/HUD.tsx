@@ -371,7 +371,7 @@ export function mergeAppUpdate<K extends keyof HudState>(
   let newStartTime = state.view?.tiltStartTime
   if (oldStartTime && newStartTime && oldStartTime != newStartTime) {
     // If Tilt restarts, reload the page to get new JS.
-    // https://github.com/tilt-dev/tilt/issues/4421
+    // https://github.com/astro-walker/tilt/issues/4421
     window.location.reload()
     return prevState
   }

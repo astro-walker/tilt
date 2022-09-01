@@ -3,7 +3,7 @@ package fsevent
 import (
 	"time"
 
-	"github.com/tilt-dev/tilt/internal/watch"
+	"github.com/astro-walker/tilt/internal/watch"
 )
 
 // BufferMinRestDuration bundles many file changes together by waiting a short amount of time after a file

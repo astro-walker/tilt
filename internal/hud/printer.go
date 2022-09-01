@@ -4,7 +4,7 @@ import (
 	"io"
 	"time"
 
-	"github.com/tilt-dev/tilt/pkg/model/logstore"
+	"github.com/astro-walker/tilt/pkg/model/logstore"
 )
 
 var backoffInit = 5 * time.Second

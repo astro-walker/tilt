@@ -37,7 +37,7 @@ func normalizeGitRemote(s string) string {
 	u.Scheme = ""
 	u.User = nil
 
-	// github.com/tilt-dev/tilt is the same as github.com/tilt-dev/tilt/
+	// github.com/tilt-dev/tilt is the same as github.com/astro-walker/tilt/
 	u.Path = strings.TrimSuffix(u.Path, "/")
 	// github.com/tilt-dev/tilt is the same as github.com/tilt-dev/tilt.git
 	u.Path = strings.TrimSuffix(u.Path, ".git")

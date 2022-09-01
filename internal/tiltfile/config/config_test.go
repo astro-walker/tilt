@@ -9,11 +9,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/tilt-dev/tilt/internal/tiltfile/include"
-	"github.com/tilt-dev/tilt/internal/tiltfile/io"
-	"github.com/tilt-dev/tilt/internal/tiltfile/starkit"
-	"github.com/tilt-dev/tilt/internal/tiltfile/value"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/tiltfile/include"
+	"github.com/astro-walker/tilt/internal/tiltfile/io"
+	"github.com/astro-walker/tilt/internal/tiltfile/starkit"
+	"github.com/astro-walker/tilt/internal/tiltfile/value"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 func TestSetResources(t *testing.T) {

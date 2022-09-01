@@ -17,16 +17,16 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	"github.com/tilt-dev/tilt/internal/controllers/core/filewatch/fsevent"
-	"github.com/tilt-dev/tilt/internal/controllers/fake"
-	"github.com/tilt-dev/tilt/internal/controllers/indexer"
-	"github.com/tilt-dev/tilt/internal/store"
-	"github.com/tilt-dev/tilt/internal/testutils/configmap"
-	"github.com/tilt-dev/tilt/internal/testutils/tempdir"
-	"github.com/tilt-dev/tilt/internal/watch"
-	"github.com/tilt-dev/tilt/pkg/apis"
-	filewatches "github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
-	"github.com/tilt-dev/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/internal/controllers/core/filewatch/fsevent"
+	"github.com/astro-walker/tilt/internal/controllers/fake"
+	"github.com/astro-walker/tilt/internal/controllers/indexer"
+	"github.com/astro-walker/tilt/internal/store"
+	"github.com/astro-walker/tilt/internal/testutils/configmap"
+	"github.com/astro-walker/tilt/internal/testutils/tempdir"
+	"github.com/astro-walker/tilt/internal/watch"
+	"github.com/astro-walker/tilt/pkg/apis"
+	filewatches "github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/pkg/logger"
 )
 
 // Test constants
@@ -213,7 +213,7 @@ func TestController_ShortRead(t *testing.T) {
 	}, time.Second, 10*time.Millisecond, "short read error was not propagated")
 
 	if runtime.GOOS == "windows" {
-		assert.Contains(t, f.Stdout(), "https://github.com/tilt-dev/tilt/issues/3556")
+		assert.Contains(t, f.Stdout(), "https://github.com/astro-walker/tilt/issues/3556")
 	}
 
 	var fw filewatches.FileWatch

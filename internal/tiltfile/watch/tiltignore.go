@@ -8,7 +8,7 @@ import (
 
 	"github.com/docker/docker/builder/dockerignore"
 
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 const TiltignoreFileName = ".tiltignore"

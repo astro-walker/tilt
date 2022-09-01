@@ -8,9 +8,9 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/tilt-dev/tilt/pkg/assets"
-	"github.com/tilt-dev/tilt/pkg/model"
-	pkgsnapshot "github.com/tilt-dev/tilt/pkg/snapshot"
+	"github.com/astro-walker/tilt/pkg/assets"
+	"github.com/astro-walker/tilt/pkg/model"
+	pkgsnapshot "github.com/astro-walker/tilt/pkg/snapshot"
 )
 
 func Serve(ctx context.Context, l net.Listener, rawSnapshot []byte) error {

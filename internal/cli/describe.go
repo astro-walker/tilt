@@ -32,9 +32,9 @@ import (
 	cmdutil "k8s.io/kubectl/pkg/cmd/util"
 	pkgdescribe "k8s.io/kubectl/pkg/describe"
 
-	"github.com/tilt-dev/tilt/internal/analytics"
-	engineanalytics "github.com/tilt-dev/tilt/internal/engine/analytics"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/analytics"
+	engineanalytics "github.com/astro-walker/tilt/internal/engine/analytics"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 type describeCmd struct {

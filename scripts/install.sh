@@ -63,7 +63,7 @@ function install_tilt() {
               *)       ARCH=$(uname -m);;
           esac
           set -x
-          curl -fsSL https://github.com/tilt-dev/tilt/releases/download/v$VERSION/tilt.$VERSION.linux.$ARCH.tar.gz | tar -xzv tilt
+          curl -fsSL https://github.com/astro-walker/tilt/releases/download/v$VERSION/tilt.$VERSION.linux.$ARCH.tar.gz | tar -xzv tilt
           copy_binary
       fi
   elif [[ "$OSTYPE" == "darwin"* ]]; then
@@ -73,7 +73,7 @@ function install_tilt() {
           # On macOS, "uname -m" reports "arm64" on ARM 64 bits machines
           ARCH=$(uname -m)
           set -x
-          curl -fsSL https://github.com/tilt-dev/tilt/releases/download/v$VERSION/tilt.$VERSION.mac.$ARCH.tar.gz | tar -xzv tilt
+          curl -fsSL https://github.com/astro-walker/tilt/releases/download/v$VERSION/tilt.$VERSION.mac.$ARCH.tar.gz | tar -xzv tilt
           copy_binary
       fi
   else
@@ -82,7 +82,7 @@ function install_tilt() {
       echo "For other installation options, check the following page:"
       echo "https://docs.tilt.dev/install.html#alternative-installations"
       echo "If you think your platform should be supported, please file an issue:"
-      echo "https://github.com/tilt-dev/tilt/issues/new"
+      echo "https://github.com/astro-walker/tilt/issues/new"
       echo "Thank you!"
       exit 1
   fi

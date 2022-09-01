@@ -14,22 +14,22 @@ import (
 
 	// DANGER: some compose-go types are not friendly to being marshaled with gopkg.in/yaml.v3
 	// and will trigger a stack overflow panic
-	// see https://github.com/tilt-dev/tilt/issues/4797
+	// see https://github.com/astro-walker/tilt/issues/4797
 	composeyaml "gopkg.in/yaml.v2"
 
 	"github.com/docker/distribution/reference"
 	"github.com/pkg/errors"
 	"go.starlark.net/starlark"
 
-	"github.com/tilt-dev/tilt/internal/container"
-	"github.com/tilt-dev/tilt/internal/controllers/apis/liveupdate"
-	"github.com/tilt-dev/tilt/internal/dockercompose"
-	"github.com/tilt-dev/tilt/internal/tiltfile/io"
-	"github.com/tilt-dev/tilt/internal/tiltfile/links"
-	"github.com/tilt-dev/tilt/internal/tiltfile/starkit"
-	"github.com/tilt-dev/tilt/internal/tiltfile/value"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/container"
+	"github.com/astro-walker/tilt/internal/controllers/apis/liveupdate"
+	"github.com/astro-walker/tilt/internal/dockercompose"
+	"github.com/astro-walker/tilt/internal/tiltfile/io"
+	"github.com/astro-walker/tilt/internal/tiltfile/links"
+	"github.com/astro-walker/tilt/internal/tiltfile/starkit"
+	"github.com/astro-walker/tilt/internal/tiltfile/value"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 // dcResourceSet represents a single docker-compose config file and all its associated services

@@ -9,8 +9,8 @@ import (
 
 	"github.com/tilt-dev/wmclient/pkg/analytics"
 
-	tiltanalytics "github.com/tilt-dev/tilt/internal/analytics"
-	"github.com/tilt-dev/tilt/pkg/logger"
+	tiltanalytics "github.com/astro-walker/tilt/internal/analytics"
+	"github.com/astro-walker/tilt/pkg/logger"
 )
 
 // CtxAndAnalyticsForTest returns a context.Context suitable for use in tests (i.e. with

@@ -9,16 +9,16 @@ import (
 	ktypes "k8s.io/apimachinery/pkg/types"
 	ctrlclient "sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/tilt-dev/tilt/internal/analytics"
-	"github.com/tilt-dev/tilt/internal/controllers/core/cmdimage"
-	"github.com/tilt-dev/tilt/internal/controllers/core/dockercomposeservice"
-	"github.com/tilt-dev/tilt/internal/controllers/core/dockerimage"
+	"github.com/astro-walker/tilt/internal/analytics"
+	"github.com/astro-walker/tilt/internal/controllers/core/cmdimage"
+	"github.com/astro-walker/tilt/internal/controllers/core/dockercomposeservice"
+	"github.com/astro-walker/tilt/internal/controllers/core/dockerimage"
 
-	"github.com/tilt-dev/tilt/internal/build"
-	"github.com/tilt-dev/tilt/internal/docker"
-	"github.com/tilt-dev/tilt/internal/store"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/build"
+	"github.com/astro-walker/tilt/internal/docker"
+	"github.com/astro-walker/tilt/internal/store"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 type DockerComposeBuildAndDeployer struct {

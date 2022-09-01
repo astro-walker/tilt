@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 var _ RStore = &TestingStore{}

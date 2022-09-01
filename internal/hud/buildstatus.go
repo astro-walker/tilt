@@ -5,9 +5,9 @@ import (
 
 	"github.com/gdamore/tcell"
 
-	"github.com/tilt-dev/tilt/internal/hud/view"
-	"github.com/tilt-dev/tilt/internal/rty"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/hud/view"
+	"github.com/astro-walker/tilt/internal/rty"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 type buildStatus struct {

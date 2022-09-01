@@ -8,8 +8,8 @@ import (
 	"github.com/docker/distribution/reference"
 
 	"github.com/tilt-dev/clusterid"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
-	"github.com/tilt-dev/tilt/pkg/logger"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/pkg/logger"
 )
 
 type KINDLoader interface {

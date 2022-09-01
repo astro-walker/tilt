@@ -8,12 +8,12 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/tilt-dev/tilt/internal/controllers/apis/cmdimage"
-	"github.com/tilt-dev/tilt/internal/controllers/apis/dockerimage"
-	"github.com/tilt-dev/tilt/internal/controllers/apis/liveupdate"
-	"github.com/tilt-dev/tilt/internal/k8s"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/controllers/apis/cmdimage"
+	"github.com/astro-walker/tilt/internal/controllers/apis/dockerimage"
+	"github.com/astro-walker/tilt/internal/controllers/apis/liveupdate"
+	"github.com/astro-walker/tilt/internal/k8s"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 // Builds Manifest objects for testing.

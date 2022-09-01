@@ -1,7 +1,7 @@
 package telemetry
 
 import (
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 type TelemetryScriptRanAction struct {

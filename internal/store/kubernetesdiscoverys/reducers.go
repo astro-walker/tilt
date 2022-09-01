@@ -6,11 +6,11 @@ import (
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/meta"
 
-	"github.com/tilt-dev/tilt/internal/controllers/apicmp"
-	"github.com/tilt-dev/tilt/internal/store"
-	"github.com/tilt-dev/tilt/internal/store/k8sconv"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/controllers/apicmp"
+	"github.com/astro-walker/tilt/internal/store"
+	"github.com/astro-walker/tilt/internal/store/k8sconv"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 func HandleKubernetesDiscoveryUpsertAction(state *store.EngineState, action KubernetesDiscoveryUpsertAction) {
@@ -50,7 +50,7 @@ func filterForResource(state *store.EngineState, name string) (*k8sconv.Kubernet
 	}
 
 	// if the yaml matches the existing resource, use its filter to save re-parsing
-	// (https://github.com/tilt-dev/tilt/issues/5837)
+	// (https://github.com/astro-walker/tilt/issues/5837)
 	if prevResource, ok := state.KubernetesResources[name]; ok {
 		if prevResource.ApplyStatus != nil && a.Status.ResultYAML == prevResource.ApplyStatus.ResultYAML {
 			return prevResource.ApplyFilter, nil

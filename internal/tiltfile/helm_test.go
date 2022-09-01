@@ -14,8 +14,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tilt-dev/tilt/internal/k8s"
-	"github.com/tilt-dev/tilt/internal/tiltfile/testdata"
+	"github.com/astro-walker/tilt/internal/k8s"
+	"github.com/astro-walker/tilt/internal/tiltfile/testdata"
 )
 
 func TestHelm(t *testing.T) {
@@ -248,7 +248,7 @@ const exampleHelmV3_0VersionOutput = `v3.0.0`
 const exampleHelmV3_1VersionOutput = `v3.1.0`
 const exampleHelmV3_2VersionOutput = `v3.2.4`
 
-// see https://github.com/tilt-dev/tilt/issues/3788
+// see https://github.com/astro-walker/tilt/issues/3788
 const exampleHelmV3_3VersionOutput = `WARNING: Kubernetes configuration file is group-readable. This is insecure. Location: /Users/someone/.kube/config
 WARNING: Kubernetes configuration file is world-readable. This is insecure. Location: /Users/someone/.kube/config
 v3.3.3+g55e3ca0

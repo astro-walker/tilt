@@ -11,9 +11,9 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/tilt-dev/clusterid"
-	wmcontainer "github.com/tilt-dev/tilt/internal/container"
-	"github.com/tilt-dev/tilt/internal/k8s"
-	"github.com/tilt-dev/tilt/internal/testutils"
+	wmcontainer "github.com/astro-walker/tilt/internal/container"
+	"github.com/astro-walker/tilt/internal/k8s"
+	"github.com/astro-walker/tilt/internal/testutils"
 )
 
 func TestCli_Run(t *testing.T) {

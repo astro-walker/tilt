@@ -59,7 +59,7 @@ Be aware that you might already have a `tilt` binary in your $PATH, so running `
 
 ### Running
 To start using Tilt, run `tilt up` in any project with a `Tiltfile` -- i.e., NOT the root of the Tilt source code.
-There are plenty of toy projects to play with in the [integration](https://github.com/tilt-dev/tilt/tree/master/integration) directory
+There are plenty of toy projects to play with in the [integration](https://github.com/astro-walker/tilt/tree/master/integration) directory
 (see e.g. `./integration/oneup`), or check out one of these sample repos to get started:
 - [ABC123](https://github.com/tilt-dev/abc123): Go/Python/JavaScript microservices generating random letters and numbers
 - [Servantes](https://github.com/tilt-dev/servantes): a-little-bit-of-everything sample app with multiple microservices in different languages, showcasing many different Tilt behaviors
@@ -267,10 +267,10 @@ Step 3) Look closely at the error message. Identify the "top" of the dependency
 graph that is failing. So if your error message is:
 
 ```
-wire: /go/src/github.com/tilt-dev/tilt/internal/cli/wire.go:182:1: inject wireRuntime: no provider found for github.com/tilt-dev/tilt/internal/k8s.MinikubeClient
-	needed by github.com/tilt-dev/tilt/internal/k8s.Client in provider set "K8sWireSet" (/go/src/github.com/tilt-dev/tilt/internal/cli/wire.go:44:18)
-	needed by github.com/tilt-dev/tilt/internal/container.Runtime in provider set "K8sWireSet" (/go/src/github.com/tilt-dev/tilt/internal/cli/wire.go:44:18)
-wire: github.com/tilt-dev/tilt/internal/cli: generate failed
+wire: /go/src/github.com/astro-walker/tilt/internal/cli/wire.go:182:1: inject wireRuntime: no provider found for github.com/tilt-dev/tilt/internal/k8s.MinikubeClient
+	needed by github.com/astro-walker/tilt/internal/k8s.Client in provider set "K8sWireSet" (/go/src/github.com/tilt-dev/tilt/internal/cli/wire.go:44:18)
+	needed by github.com/astro-walker/tilt/internal/container.Runtime in provider set "K8sWireSet" (/go/src/github.com/tilt-dev/tilt/internal/cli/wire.go:44:18)
+wire: github.com/astro-walker/tilt/internal/cli: generate failed
 wire: at least one generate failure
 ```
 
@@ -309,7 +309,7 @@ git push origin v0.x.y
 
 CircleCI will automatically start building your release, and notify the
 #notify-circleci slack channel when it's done. The releaser generates a release on
-at https://github.com/tilt-dev/tilt/releases, with a Changelog prepopulated automatically.
+at https://github.com/astro-walker/tilt/releases, with a Changelog prepopulated automatically.
 (Give it a few moments. It appears as a tag first, before turning into a full release.)
 
 ### Verifying

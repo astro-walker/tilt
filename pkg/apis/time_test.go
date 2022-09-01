@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/require"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/tilt-dev/tilt/pkg/apis"
+	"github.com/astro-walker/tilt/pkg/apis"
 )
 
 func TestMicroTime(t *testing.T) {

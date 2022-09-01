@@ -5,7 +5,7 @@ import (
 
 	"k8s.io/client-go/tools/clientcmd"
 
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 type TiltClientConfig clientcmd.ClientConfig

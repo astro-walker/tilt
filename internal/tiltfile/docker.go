@@ -13,15 +13,15 @@ import (
 	"github.com/pkg/errors"
 	"go.starlark.net/starlark"
 
-	"github.com/tilt-dev/tilt/internal/container"
-	"github.com/tilt-dev/tilt/internal/dockerfile"
-	"github.com/tilt-dev/tilt/internal/ospath"
-	"github.com/tilt-dev/tilt/internal/sliceutils"
-	"github.com/tilt-dev/tilt/internal/tiltfile/io"
-	"github.com/tilt-dev/tilt/internal/tiltfile/starkit"
-	"github.com/tilt-dev/tilt/internal/tiltfile/value"
-	"github.com/tilt-dev/tilt/pkg/apis/core/v1alpha1"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/container"
+	"github.com/astro-walker/tilt/internal/dockerfile"
+	"github.com/astro-walker/tilt/internal/ospath"
+	"github.com/astro-walker/tilt/internal/sliceutils"
+	"github.com/astro-walker/tilt/internal/tiltfile/io"
+	"github.com/astro-walker/tilt/internal/tiltfile/starkit"
+	"github.com/astro-walker/tilt/internal/tiltfile/value"
+	"github.com/astro-walker/tilt/pkg/apis/core/v1alpha1"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 const dockerPlatformEnv = "DOCKER_DEFAULT_PLATFORM"
@@ -48,7 +48,7 @@ type dockerImage struct {
 
 	// Overrides the container args. Used as an escape hatch in case people want the old entrypoint behavior.
 	// See discussion here:
-	// https://github.com/tilt-dev/tilt/pull/2933
+	// https://github.com/astro-walker/tilt/pull/2933
 	overrideArgs *v1alpha1.ImageMapOverrideArgs
 
 	dbDockerfilePath string
@@ -271,7 +271,7 @@ func (s *tiltfileState) parseOnly(val starlark.Value) ([]string, error) {
 
 	for _, p := range paths {
 		// We want to forbid file globs due to these issues:
-		// https://github.com/tilt-dev/tilt/issues/1982
+		// https://github.com/astro-walker/tilt/issues/1982
 		// https://github.com/moby/moby/issues/30018
 		if strings.Contains(p, "*") {
 			return nil, fmt.Errorf("'only' does not support '*' file globs. Must be a real path: %s", p)
@@ -309,7 +309,7 @@ func (s *tiltfileState) customBuild(thread *starlark.Thread, fn *starlark.Builti
 		"command_bat_val", &commandBatVal,
 		"outputs_image_ref_to", &outputsImageRefTo,
 
-		// This is a crappy fix for https://github.com/tilt-dev/tilt/issues/4061
+		// This is a crappy fix for https://github.com/astro-walker/tilt/issues/4061
 		// so that we don't break things.
 		"command_bat", &commandBat,
 

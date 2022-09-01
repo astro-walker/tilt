@@ -27,8 +27,8 @@ import (
 	ktesting "k8s.io/client-go/testing"
 
 	"github.com/tilt-dev/clusterid"
-	"github.com/tilt-dev/tilt/internal/k8s/testyaml"
-	"github.com/tilt-dev/tilt/internal/testutils"
+	"github.com/astro-walker/tilt/internal/k8s/testyaml"
+	"github.com/astro-walker/tilt/internal/testutils"
 )
 
 func TestEmptyNamespace(t *testing.T) {

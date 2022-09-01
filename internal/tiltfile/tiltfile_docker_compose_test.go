@@ -9,10 +9,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/mod/semver"
 
-	"github.com/tilt-dev/tilt/internal/controllers/apis/liveupdate"
-	ctrltiltfile "github.com/tilt-dev/tilt/internal/controllers/apis/tiltfile"
-	"github.com/tilt-dev/tilt/internal/dockercompose"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/controllers/apis/liveupdate"
+	ctrltiltfile "github.com/astro-walker/tilt/internal/controllers/apis/tiltfile"
+	"github.com/astro-walker/tilt/internal/dockercompose"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 const simpleConfig = `version: '3'

@@ -3,8 +3,8 @@ package webview
 import (
 	"github.com/tilt-dev/wmclient/pkg/analytics"
 
-	"github.com/tilt-dev/tilt/internal/store"
-	"github.com/tilt-dev/tilt/pkg/model"
+	"github.com/astro-walker/tilt/internal/store"
+	"github.com/astro-walker/tilt/pkg/model"
 )
 
 func newState(manifests []model.Manifest) *store.EngineState {
