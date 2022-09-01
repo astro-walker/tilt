@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"bytes"
 	"context"
+	"errors"
 	"fmt"
 	"go/build"
 	"io"
@@ -30,8 +31,9 @@ const (
 type TiltDriver struct {
 	Environ map[string]string
 
-	t    testing.TB
-	port int
+	t       testing.TB
+	tiltBin string
+	port    int
 }
 
 type TiltDriverOption func(t testing.TB, td *TiltDriver)
@@ -41,6 +43,14 @@ func TiltDriverUseRandomFreePort(t testing.TB, td *TiltDriver) {
 	require.NoError(t, err, "Could not get a free port")
 	td.port = l.Addr().(*net.TCPAddr).Port
 	require.NoError(t, l.Close(), "Could not get a free port")
+}
+
+func TiltDriverUseSystemTilt(t testing.TB, td *TiltDriver) {
+	tiltBin, err := exec.LookPath("tilt")
+	if !errors.Is(err, exec.ErrDot) {
+		require.NoError(t, err, "Unable to find tilt in PATH, is it installed?")
+	}
+	td.tiltBin = tiltBin
 }
 
 func NewTiltDriver(t testing.TB, options ...TiltDriverOption) *TiltDriver {
@@ -55,11 +65,13 @@ func NewTiltDriver(t testing.TB, options ...TiltDriverOption) *TiltDriver {
 }
 
 func (d *TiltDriver) cmd(ctx context.Context, args []string, out io.Writer) *exec.Cmd {
-	// rely on the Tilt binary in GOPATH that should have been created by `go install` from the
-	// fixture to avoid accidentally picking up a system install of tilt with higher precedence
-	// on system PATH
-	tiltBin := filepath.Join(build.Default.GOPATH, "bin", "tilt")
-	cmd := exec.CommandContext(ctx, tiltBin, args...)
+	if len(d.tiltBin) == 0 {
+		// rely on the Tilt binary in GOPATH that should have been created by `go install` from the
+		// fixture to avoid accidentally picking up a system install of tilt with higher precedence
+		// on system PATH unless the user explicitly specified it
+		d.tiltBin = filepath.Join(build.Default.GOPATH, "bin", "tilt")
+	}
+	cmd := exec.CommandContext(ctx, d.tiltBin, args...)
 	cmd.Stdout = out
 	cmd.Stderr = out
 	cmd.Env = os.Environ()
